@@ -21,6 +21,9 @@ header {
     margin-bottom: 14%;
     width: 70%;
   }
+  .card {
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -32,6 +35,10 @@ header {
   }
   .carousel-caption p {
     font-size: 16px;
+  }
+
+  .card {
+    width: 80%;
   }
 }
 
@@ -46,6 +53,10 @@ header {
   }
   .c3 {
     margin-bottom: 7%;
+  }
+
+  .card {
+    width: 50%;
   }
 }
 
@@ -63,17 +74,14 @@ header {
   .carousel-caption p {
     font-size: 12px;
   }
+  .card {
+    width: 60%;
+  }
 }
 
 @media only screen and (max-width: 400px) {
   .carousel-caption {
     margin-bottom: 0%;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .leftside, .rightside {
-    height: 100vh;
   }
 }
 
@@ -85,12 +93,17 @@ section {
 
 li {
   color: #151515;
+  font-family: 'Quicksand', sans-serif;
 }
 
 a {
   color: black;
   transition: .7s ease;
   font-family: 'Quicksand', sans-serif;
+}
+
+a:hover{
+  text-decoration: none;
 }
 
 h1 {
@@ -104,36 +117,51 @@ p {
 }
 
 .padding-card-txt {
-  padding-top: 160px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 80px;
+  display: flex;
+  align-items: center;
 }
 
 .padding-card-img {
-  padding-top: 40px;
-  padding-bottom: 20px;
-  padding-left: 80px;
-  padding-right: 30px;
-}
-
-
-.padding-card-txt2 {
-  padding-top: 160px;
-  padding-bottom: 20px;
-  padding-left: 70px;
-  padding-right: 30px;
-}
-
-.padding-card-img2 {
-  padding-top: 40px;
-  padding-bottom: 20px;
-  padding-left: 30px;
-  padding-right: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 .padding-bot {
   padding-bottom: 40px;
 }
 
+.backgroundimg {
+  background-image: url('../images/blue-bgd.jpg');
+}
 
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.breadcrumb {
+  background: rgba(245, 245, 245, 0); 
+  border: 0px solid rgba(245, 245, 245, 0); 
+  border-radius: 0px; 
+}
+.breadcrumb li {
+  font-size: 25px;
+}
+.breadcrumb a {
+  color: rgba(0, 0, 0, 1);
+}
+.breadcrumb a:hover {
+  color: rgba(42, 100, 150, 1);
+}
+.breadcrumb>.active {
+  color: rgba(28, 28, 28, 1);
+}
+.breadcrumb>li+li:before {
+  color: rgba(204, 204, 204, 1); 
+  content: "\002F\00a0";
+}
+
+.breadcrumb{
+  padding-left: 40%;
+  padding-top: 5%;
+}
