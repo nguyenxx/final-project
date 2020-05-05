@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="IKEA retail website">
+  <meta name="author" content="Susie Nguyen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IKEA Kids Beds</title>
+
+  <!-- Bootstrap v4.4.1 -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+  <link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:500|Source+Sans+Pro:600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Arimo:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Shadows+Into+Light&display=swap" rel="stylesheet">
+
+  <script>
+    $(function () {
+      $("#tabs").tabs();
+    });
+  </script>
+
+  <!--font awesome css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    h1 {
+      text-align: center;
+    }
+
+    h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800;
+    }
+
+    h4 {
+      font-size: 30px;
+      padding-top: 10px;
+    }
+
+    h5 {
+      color: grey;
+      font-size: 20px;
+    }
+
+    .padding-card {
+      padding-bottom: 25px;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+
+
+    .image {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .middle {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .container:hover .image {
+      opacity: 0.3;
+    }
+
+    .container:hover .middle {
+      opacity: 1;
+    }
+
+    .text {
+      color: black;
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+
+    .h1-style {
+      padding-top: 100px;
+      padding-bottom: 30px;
+      font-family: 'Shadows Into Light', cursive;
+      font-size: 80px;
+    }
+  </style>
+</head>
+
+<div class="container-fluid">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="index.html"><img src="images/ikea-logo.svg" alt="logo" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Products
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="kids-beds.html">Kids Beds</a>
+              <a class="dropdown-item" href="#">Storage & organization</a>
+              <a class="dropdown-item" href="#">Kids Desks</a>
+              <a class="dropdown-item" href="#">Toys & Play</a>
+              <a class="dropdown-item" href="#">Kids Textiles</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Ideas & Inspiration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="customer-service.html">Customer Service</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false"> Shopping Cart <i class="fa fa-shopping-cart"></i></a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#">
+                <p>MYDAL: bunk bed frame (1) <br> 179.00 USD</p>
+              </a>
+              <a class="dropdown-item" href="#">
+                <p>SPISIG: play kitchen (1) <br> 49.99 USD</p>
+              </a>
+              <a class="dropdown-item" href="#">CHECK OUT</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="container col-lg-6">
+      <h1 class="h1-style"> IKEA IDEAS </h1>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="container col-lg-6">
+      <img src="images/inspiration-1.jpg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">
+          <a href="https://www.ikea.com/us/en/ideas/home-visit-creative-ideas-for-kids-pubff339511" target="_blank">
+            <h2>HOME VISIT: creative ideas for kids</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container col-lg-6">
+      <img src="images/inspiration3.jpg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">
+          <a href="https://www.ikea.com/us/en/ideas/home-visit-create-a-dream-kids-room-pubc6dcfc21" target="_blank">
+            <h2>HOME VISIT: create a dream kid’s room</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="padding-bot"></div>
+
+  <div class="row">
+    <div class="container col-lg-6">
+      <img src="images/inspiration4.jpg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">
+          <a href="https://www.ikea.com/us/en/ideas/a-kids-room-to-inspire-creativity-pubbcd8cd51" target="_blank">
+            <h2>A kid’s room to inspire creativity</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container col-lg-6">
+      <img src="images/inspiration5.jpg" alt="Avatar" class="image" style="width:100%">
+      <div class="middle">
+        <div class="text">
+          <a href="https://www.ikea.com/us/en/ideas/tips-for-a-playful-childrens-sleepover-pub343e8930" target="_blank">
+            <h2>Tips for a playful children’s sleepover</h2>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="padding-bot"></div>
+
+  <div class="row">
+    <footer id="sticky-footer" class="py-4 bg-light text-white-50 col-lg-12">
+      <div class="container text-center">
+        <p>FOLLOW US</p>
+        <p>
+          <i class="fa fa-facebook-official" style="color: black;"> <a href="#" target="_blank" style="color: black;">
+              Facebook </a> </i> &nbsp; &nbsp;
+          <i class="fa fa-instagram" style="color: black;"> <a href="#" target="_blank" style="color: black;"> Instagram
+            </a> </i> &nbsp; &nbsp;
+          <i class="fa fa-pinterest-p" style="color: black;"> <a href="#" target="_blank" style="color: black;">
+              Pinterest </a> </i> &nbsp; &nbsp;
+          <i class="fa fa-twitter-square" style="color: black;"> <a href="#" target="_blank" style="color: black;">
+              Twitter </a> </i> &nbsp; &nbsp;
+          <i class="fa fa-youtube-play" style="color: black;"> <a href="#" target="_blank" style="color: black;">
+              Youtube </a> </i>
+        </p>
+        <p>&copy;All rights reserved</p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- jQuery and Bootstrap links - do not delete! -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/scrolling-nav.js"></script>
+  <!-- end of do not delete -->
+</div> <!-- End Container -->
+
+</html>
